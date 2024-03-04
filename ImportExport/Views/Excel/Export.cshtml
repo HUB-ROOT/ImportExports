@@ -1,0 +1,9 @@
+﻿<h2>Export to Excel</h2>
+
+<form asp-action="ExportEntities" asp-controller="Excel" method="get">
+    <div class="form-group">
+        <label for="mainEntityName">Entity Name:</label>
+        <input type="text" class="form-control" id="mainEntityName" name="mainEntityName" value="@Model" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Export</button>
+</form>
